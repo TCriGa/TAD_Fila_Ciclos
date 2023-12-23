@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class QueueOperations extends Queue {
     int operation = 0;
 
@@ -68,6 +70,10 @@ public class QueueOperations extends Queue {
             }
         }
         return print.toString();
+    }
+    static int geraRand(int max){
+    Random random = new Random();
+    return random.nextInt(max + 1);
     }
 
 }
